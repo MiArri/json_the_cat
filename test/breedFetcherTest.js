@@ -18,8 +18,8 @@ describe('fetchBreedDescription', () => {
 
   it('returns an error for a invalid or non-existent breed, via callback', (done) => {
     fetchBreedDescription('Vancouverian', (err, desc) => {
-      //we expect error
-      assert.equal("Breed Not Found", desc);
+      // we expect error
+      assert.equal("Breed Not Found", err);
       done();
     });
   });
